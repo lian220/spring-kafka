@@ -22,7 +22,6 @@ public class KafkaController {
     public String sendMessage(@RequestParam String message) {
         log.info("message : {}", message);
         this.producer.sendMessage(message);
-
         return "success";
     }
 }
